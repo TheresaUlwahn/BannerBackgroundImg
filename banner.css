@@ -28,7 +28,7 @@ body {
 	place-content: space-between;
 	width: 980px;
 	height: 240px;
-	background-color: #faf8f8;
+	background-color: #f3f3f3;
 	position: relative;
 }
 
@@ -49,44 +49,58 @@ body {
   /* position: relative; */
 }
 
-.infoText {
+.info {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
 	justify-content: center;
-
+	margin: 0px 96px;
 }
 
+/* .headLines {
+	margin: 10px;
+} */
+
 h1 {
-	font-family: gothamBold, serif;
-	color: #6f6f6f;
+	font-family: gothamMedium, serif;
+	color: #82a1b4;
 	text-transform:uppercase;
+	font-size: x-large;
+	margin-bottom: 0px;
+	margin-top: 0px;
 }
 
 h2 {
 	/* font-family: gothamBold, serif; */
 	font-family: gothamBook, sans-serif;
-	font-size: small;
+	font-size: 14px;
 	padding: 10px 20px;
 	margin: 0px;
-	color: #6f6f6f;
+	color: #82a1b4;
 	text-transform:uppercase;
 }
 
+h3 {
+	font-family: gothamBook, sans-serif;
+	font-size: 11px;
+	padding: 8px 5px;
+	margin: 0px;
+	color: #82a1b4;
+}
+
 button {
-	padding: 0px;
-	border: solid 1px white;
-	border-radius: 50px;
-	border-top-style: groove;
+padding: 0;
+	border: solid 2px #82a1b4;
+	background-color:transparent;
 	/* border: none; */
 }
 
 button :hover {
-	border-radius: 50px;
 	cursor: pointer;
-	background-color: #6f6f6f;
-	color: white;
+	padding: 8px 5px;
+	background-color: #82a1b4;
+	color: #f3f3f3;
 }
 
 .imgLogoBlack {
