@@ -27,12 +27,16 @@ body {
 	position: relative;
 }
 
+.imgSection{
+  position: relative;
+}
+
 .imgLogo {
 	width: 100px;
 	height: 100px;
 	position: absolute;
-  top: 8px;
-  left: 16px;
+  bottom: 8px;
+  right: 16px;
 }
 
 .productImg {
@@ -52,7 +56,7 @@ body {
 }
 
 .headLines {
-	margin-top: 33px;
+	margin-top: 35px;
 }
 
 h1 {
@@ -68,7 +72,7 @@ h1 {
 h2 {
 	font-family: gothamBook, sans-serif;
 	font-size: 14px;
-  padding: 10px 0px;
+  padding: 14px 6px;
 	margin: 0px;
 	color: #82a1b4;
   text-transform:uppercase;
@@ -77,30 +81,56 @@ h2 {
 }
 
 h3 {
-	font-family: gothamMedium, serif;
-	font-size: 14px;
-	padding: 8px 5px;
+	font-family: gothamBook, sans-serif;
+	font-size: 12px;
+	padding: 1px 5px;
 	margin: 0px;
-  color: #82a1b4;
+  color: #ffffff;
   letter-spacing: 0.5px;
+  line-height: 1.6;
 }
 
-button {
-  padding: 0;
-	border: solid 2px #82a1b4;
-  background-color:transparent;
-  margin-top: 10px;
-}
-
-button :hover {
-	cursor: pointer;
-	padding: 8px 5px;
+.glossy-button {
+	/* display: inline-block; */
+	position: relative;
 	background-color: #82a1b4;
-	color: #f3f3f3;
-}
+	/* background-color: #AAA; */
+	background-image: linear-gradient( /* chrome */
+	  hsla(0, 0%, 100%, 0.6), hsla(0, 0%, 100%, 0) 50%,
+	  hsla(0, 0%, 0%, 0.3) 90%, hsla(0, 0%, 100%, 0.2)
+	);
+	padding: 5px 10px;
+	text-shadow:
+	  0 0 15px hsla(0, 0%, 100%, 1), /* bloom */
+	  0 2px 4px hsla(0, 0%, 0%, 0.7); /* drop shadow */
+	border: none;
+	border-radius: 50px;
+	/* margin: 10px; */
+	box-shadow:
+	  inset 0 -5px 20px hsla(0, 0%, 0%, 0.4), /* top light */
+	  inset 0 5px 20px hsla(0, 0%, 100%, 0.4); /* bottom shadow */
 
-.imgLogoBlack {
-	position: absolute;
-  bottom: 8px;
-  right: 16px;
+	cursor: pointer;
+	transition: transform 0.1s, box-shadow 0.1s;
+  }
+  
+.glossy-button:before {
+	content: '';
+	display: block;
+	position: absolute; 
+  width: 130px;
+  left: 11px;
+  right: 20px;
+  top: 2px;
+  height: 12px;
+	border-radius: 15px;
+	background: linear-gradient(
+	  hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0) );
+  }
+  
+.glossy-button:hover {
+transform: scale(1.05);
+box-shadow:
+  inset 0 -5px 20px hsla(0, 0%, 0%, 0.4), /* top light */
+  inset 0 5px 20px hsla(0, 0%, 100%, 0.4), /* bottom shadow */
 }
